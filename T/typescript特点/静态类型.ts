@@ -1,0 +1,1 @@
+var name1 : string = '张三'

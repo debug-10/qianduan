@@ -3,5 +3,5 @@
 // console.log(path.resolve(_filename))
 
 const argv = process.argv
-// console.log('参数',argv)
-console.log(argv.slice(2))
+console.log('参数',argv)
+// console.log(argv.slice(2))
