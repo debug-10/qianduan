@@ -5,7 +5,7 @@ function createPerson(firstName, lastName, age) {
         lastName,
         age,
         greet: function () {
-            return `Hello my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`;
+            return `Hello my name is ${this.firstName} ${this.lastName}and I am ${this.age} years old.`;
         }
     };
 }

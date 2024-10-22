@@ -8,7 +8,7 @@ function LogParameter(
 }
 
 class DemoClass {
-    greet(@LogParameter message :string){
+    greet( @LogParameter message :string){
         console.log(message);
     }
 }

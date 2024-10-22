@@ -1,0 +1,28 @@
+import { defineStore } from "pinia";
+
+//定义 CounterState 的接口
+interface CounterState{
+    //存储计数器的值
+    count: number;
+}
+
+//定义一个Store
+export const useCounterStore = defineStore("counter",{
+    // Stste: 定义存贮的数据
+    state: (): CounterState => ({
+        count: 0,
+    }),
+    // Getters: 计算属性
+    getters: {
+        doubleCount: (state:CounterState):number => state.count*2,
+    } ,
+    // Actions: 定义修改 State 的方法
+    actions :{
+        increment() {
+            this.count++;
+        },
+        decrement() {
+            this.count--;
+        },
+    },
+});
